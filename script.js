@@ -35,18 +35,18 @@ alert(`Your Sex ${sex} `);
     
 let retired = prompt('You are retired?');
 
-if (ages > 65) {
+if (ages >= 65) {
   alert('Your can rest');
-}  else if (ages  > 55) {
+}  else if (ages  >= 55) {
   alert('Your can rest');
 } else {
   alert('Go to work drone!');
 }
 
 
-if (Sex > Man) {
+if (Sex == Man) {
   alert( 'Your can rest');
-} else if (sex > Woman) {
+} else if (sex == Woman) {
   alert( 'Your can rest' );
 } else {
   alert( 'Go to work drone!' );
