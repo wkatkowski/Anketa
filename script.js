@@ -27,9 +27,6 @@ let ages = prompt('Your age in years?');
 
 let sex = prompt("Your sex? Man/Woman");
 
-
-let retired = prompt('You are retired?');
-
 if (ages > 65 && sex === "Man") {
   alert(`Your Full Name: ${firstNames},
   Your: ${ages} age!,
