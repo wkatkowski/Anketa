@@ -55,29 +55,3 @@ if (ages > 65 && sex == "Man") {
   Go to work drone!`);
 }
 
-// if (ages > 55 && sex == "Woman") {
-//   alert(`Your Full Name: ${firstNames},
-//   Your: ${ages} age!,
-//   Your age in: ${ages * 365} days
-//   Your Sex: ${sex}, 
-//   In five years you will be: ${-number - 5} age!,
-//   Your can rest`);
-// // } else if (sex == "Woman") {
-// //   alert(`
-// //   Your Full Name: ${firstNames},
-// //   Your: ${ages} age!,
-// //   Your age in: ${ages * 365} days
-// //   Your Sex: ${sex}, 
-// //   In five years you will be: ${-ages - 5} age!,
-// //   Your can rest`);
-// } else {
-//   alert(`
-//   Your Full Name: ${firstNames},
-//   Your: ${ages} age!,
-//   Your age in: ${ages * 365} days
-//   Your Sex: ${sex}, 
-//   In five years you will be: ${-ages - 5} age!,
-//   Go to work drone!`);
-// }
-
-
