@@ -15,41 +15,69 @@
 
 
 let firstNames = prompt("What is your Full name?");
-alert(`Your Full Name ${firstNames} `);
 
 let ages = prompt('Your age in years?');
-alert(` ${ages} age!`);
 
-let days = prompt('Your age in days?');
-let start = moment('07/14/1995');
-let future = moment('08/06/2020');
-let d = future.diff(start, 'days'); 
-alert(` ${d} days`);
+// let days = prompt('Your age in days?');
+// let start = moment('07/14/1995');
+// let future = moment('08/06/2020');
+// let d = future.diff(start, 'days'); 
+// alert(` ${d} days`);
 
-let number = prompt('How old are you across five years?');
-alert(`In five years you will be ${-number - 5} age!`);
 
 let sex = prompt("Your sex? Man/Woman");
-alert(`Your Sex ${sex} `);
 
-    
+
 let retired = prompt('You are retired?');
 
-if (ages >= 65) {
-  alert('Your can rest');
-}  else if (ages  >= 55) {
-  alert('Your can rest');
+if (ages > 65 && sex == "Man") {
+  alert(`Your Full Name: ${firstNames},
+  Your: ${ages} age!,
+  Your age in: ${ages * 365} days
+  Your Sex: ${sex}, 
+  In five years you will be: ${-ages - 5} age!,
+  Your can rest`);
+} else if (ages > 55 && sex == "Woman") {
+  alert(`
+  Your Full Name: ${firstNames},
+  Your: ${ages} age!,
+  Your age in: ${ages * 365} days
+  Your Sex: ${sex}, 
+  In five years you will be: ${-ages - 5} age!,
+  Your can rest`);
 } else {
-  alert('Go to work drone!');
+  alert(`
+  Your Full Name: ${firstNames},
+  Your: ${ages} age!,
+  Your age in: ${ages * 365} days
+  Your Sex: ${sex}, 
+  In five years you will be: ${-ages - 5} age!,
+  Go to work drone!`);
 }
 
-
-if (Sex == Man) {
-  alert( 'Your can rest');
-} else if (sex == Woman) {
-  alert( 'Your can rest' );
-} else {
-  alert( 'Go to work drone!' );
-}
+// if (ages > 55 && sex == "Woman") {
+//   alert(`Your Full Name: ${firstNames},
+//   Your: ${ages} age!,
+//   Your age in: ${ages * 365} days
+//   Your Sex: ${sex}, 
+//   In five years you will be: ${-number - 5} age!,
+//   Your can rest`);
+// // } else if (sex == "Woman") {
+// //   alert(`
+// //   Your Full Name: ${firstNames},
+// //   Your: ${ages} age!,
+// //   Your age in: ${ages * 365} days
+// //   Your Sex: ${sex}, 
+// //   In five years you will be: ${-ages - 5} age!,
+// //   Your can rest`);
+// } else {
+//   alert(`
+//   Your Full Name: ${firstNames},
+//   Your: ${ages} age!,
+//   Your age in: ${ages * 365} days
+//   Your Sex: ${sex}, 
+//   In five years you will be: ${-ages - 5} age!,
+//   Go to work drone!`);
+// }
 
 
