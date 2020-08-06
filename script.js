@@ -35,7 +35,7 @@ if (ages > 65 && sex === "Man") {
   Your: ${ages} age!,
   Your age in: ${ages * 365} days
   Your Sex: ${sex}, 
-  In five years you will be: ${-ages - 5} age!,
+  In five years you will be: ${+ages + 5} age!,
   Your can rest`);
 } else if (ages > 55 && sex === "Woman") {
   alert(`
@@ -43,7 +43,7 @@ if (ages > 65 && sex === "Man") {
   Your: ${ages} age!,
   Your age in: ${ages * 365} days
   Your Sex: ${sex}, 
-  In five years you will be: ${-ages - 5} age!,
+  In five years you will be: ${+ages + 5} age!,
   Your can rest`);
 } else {
   alert(`
@@ -51,7 +51,7 @@ if (ages > 65 && sex === "Man") {
   Your: ${ages} age!,
   Your age in: ${ages * 365} days
   Your Sex: ${sex}, 
-  In five years you will be: ${-ages - 5} age!,
+  In five years you will be: ${+ages + 5} age!,
   Go to work drone!`);
 }
 
