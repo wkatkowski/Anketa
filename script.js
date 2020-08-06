@@ -30,14 +30,14 @@ let sex = prompt("Your sex? Man/Woman");
 
 let retired = prompt('You are retired?');
 
-if (ages > 65 && sex == "Man") {
+if (ages > 65 && sex === "Man") {
   alert(`Your Full Name: ${firstNames},
   Your: ${ages} age!,
   Your age in: ${ages * 365} days
   Your Sex: ${sex}, 
   In five years you will be: ${-ages - 5} age!,
   Your can rest`);
-} else if (ages > 55 && sex == "Woman") {
+} else if (ages > 55 && sex === "Woman") {
   alert(`
   Your Full Name: ${firstNames},
   Your: ${ages} age!,
