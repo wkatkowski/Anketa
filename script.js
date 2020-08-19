@@ -1,43 +1,66 @@
 "use strict";
 
+// function init() {
+//   const firstName = prompt("What is your first name?");
+//   const secondName = prompt("What is your second name?");
+//   const patronymic = prompt("What is your patronymic?");
+//   const ages = prompt('Your age in years?');
+//   const sex = confirm('Your sex. Man(ОК)/Woman(ОТМЕНА)');
+  
+  
+//   if (!firstName || !secondName || !patronymic || ages === '' || isNaN(ages)) {
+//         alert("Строка пуста");
+//         init();
+//       }
+//     alert('Your Full Name: ' + firstName + secondName + patronymic +'\n' +
+//               'Your age: ' + ages + '\n' +
+//               'Your age in days: ' + (ages * 365) + '\n' +
+//               'In five years you will be: ' + (+ages + 5) + ' age' + '\n' +
+//               'Your sex: ' + (sex ? 'Man' : 'Woman') + '\n' +
+//               'You are retired: ' + ((ages >= 55 && sex === false) || (ages >= 65 && sex === true) ? 'Yes' : 'No'));
+//   }
+//   init();
+  
 
-let firstName = prompt("What is your first name?");
-let secondName = prompt("What is your second name?");
-let patronymic = prompt("What is your patronymic?");
 
-let ages = prompt('Your age in years?');
 
-// let days = prompt('Your age in days?');
-// let start = moment('07/14/1995');
-// let future = moment('08/06/2020');
-// let d = future.diff(start, 'days'); 
-// alert(` ${d} days`);
 
-let sex = prompt("Your sex? Man/Woman");
 
-if (ages > 65 && sex === "Man") {
-alert(`
-  Your Full Name ${firstName} ${secondName} ${patronymic},
-  Your: ${ages} age!,
-  Your age in: ${ages * 365} days
-  Your Sex: ${sex}, 
-  In five years you will be: ${+ages + 5} age!,
-  Your can rest`);
-} else if (ages > 55 && sex === "Woman") {
-  alert(`
-  Your Full Name ${firstName} ${secondName} ${patronymic},
-  Your: ${ages} age!,
-  Your age in: ${ages * 365} days
-  Your Sex: ${sex}, 
-  In five years you will be: ${+ages + 5} age!,
-  Your can rest`);
-} else {
-  alert(`
-  Your Full Name ${firstName} ${secondName} ${patronymic},
-  Your: ${ages} age!,
-  Your age in: ${ages * 365} days
-  Your Sex: ${sex}, 
-  In five years you will be: ${+ages + 5} age!,
-  Go to work drone!`);
+const firstName = prompt("What is your first name?");
+string(firstName); 
+
+const secondName = prompt("What is your second name?");
+string(secondName); 
+
+const patronymic = prompt("What is your patronymic?");
+string(patronymic); 
+
+const ages = prompt('Your age in years?');
+
+
+const sex = confirm('Your sex. Man(ОК)/Woman(ОТМЕНА)');
+
+
+function string (value) {
+    if (value === '' || value  === ' ') {
+      alert('Строка пуста')
+    } 
 }
+
+  function found(userName, userSurname, userPatronymic, userAge, userSex)
+{
+
+  alert('Your Full Name: ' + userName + ' ' + userSurname + ' ' + userPatronymic +'\n' +
+    'Your age: ' + userAge + '\n' +
+    'Your age in days: ' + (userAge * 365) + '\n' +
+    'In five years you will be: ' + (+userAge + 5) + ' age' + '\n' +
+    'Your sex: ' + (userSex ? 'Man' : 'Woman') + '\n' +
+    'You are retired: ' + ((userAge >= 55 && userSex === false) || (userAge >= 65 && userSex === true) ? 'Yes' : 'No')
+    )
+}
+
+found(firstName, secondName, patronymic, ages, sex)
+
+
+
 
